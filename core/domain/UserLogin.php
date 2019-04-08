@@ -1,6 +1,14 @@
-<?
+<?php
+
 class UserLogin {
-	public $name;
+	public $username;
 	public $password;
+
+	function __construct($username, $password) {
+		$this->username = $username;
+		$this->password = $password;
+	}
 }
+
+
 ?>

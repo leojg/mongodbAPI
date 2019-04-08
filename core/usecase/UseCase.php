@@ -1,14 +1,14 @@
-<?
+<?php
 
-abstract class UseCase<I, O> {
+abstract class UseCase {
 
-	abstract function run(I $input): O
+	abstract function run($input);
 
-	function execute(): O {
-		
+	function execute($input) {
+		return $this->run($input);
 	}
 
 }
 
 
-?>
+?>	
